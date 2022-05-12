@@ -19,4 +19,4 @@ app.use('/', route)
 
 
 // Server
-server.listen(process.env.PORT, () => {console.log(`Serve running at port: ${process.env.PORT}`)})
+server.listen(process.env.PORT || 5000, () => {console.log(`Serve running at port: ${process.env.PORT}`)})
